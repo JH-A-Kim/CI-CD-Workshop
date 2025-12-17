@@ -1,4 +1,4 @@
-* **Title:** GitHub Actions CI/CD in Practice
+# GitHub Actions CI/CD in Practice
 
 ## Learning objectives
 1.  Attendees will be able to **create** a basic `.yml` workflow file to automatically run unit tests on their code in GitHub Actions (CI).
