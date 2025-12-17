@@ -18,7 +18,7 @@ Imagine a world where a developer never has to manually run a test suite or SSH 
 
 ## Materials
 * **Slide Deck:** https://docs.google.com/presentation/d/19q4MuYz5nqu4GSwMYKyRkUGMZO8QX8c4BrJz3M5tIck/edit?usp=sharing
-* **Starter Repository:** A pre-made GitHub repo containing a simple Python application (`adder.py`, `tests/`) so students don't have to write app code from scratch.
+* **Starter Repository:** This repository will be forked for exercises.
 * **GitHub Account:** Required for all attendees.
 * **Laptop:** With Git installed.
 
