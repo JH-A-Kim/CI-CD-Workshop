@@ -2,6 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   # Runs only when the 'test' workflow passes on the main branch
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -33,4 +36,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
