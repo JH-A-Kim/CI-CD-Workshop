@@ -20,7 +20,8 @@ jobs:
           python-version: '3.11.7'
         
       - name: Run Tests with Unittest
-        run: python -m unittest discover 
+        run: python -m unittest discover -s tests
+
 
 
 
