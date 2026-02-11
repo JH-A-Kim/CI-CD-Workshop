@@ -16,7 +16,13 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -27,12 +33,12 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Tell GitHub to upload the root directory containing index.html
           path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 
 
